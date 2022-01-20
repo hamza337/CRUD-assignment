@@ -1,0 +1,27 @@
+<%= form_with model: @company do |form| %>
+    <div>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </div>
+    <div>
+      <%= form.label :location %><br>
+      <%= form.text_field :location %>
+    </div>
+    <div>
+      <%= form.label :phone_number %><br>
+      <%= form.text_field :phone_number %>
+    </div>
+    <div>
+      <%= form.label :no_of_employee %><br>
+      <%= form.text_field :no_of_employee %>
+    </div>
+    <div>
+      <%= form.label :company_type %><br>
+      <%= form.text_field :company_type %>
+    </div>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+  
+  

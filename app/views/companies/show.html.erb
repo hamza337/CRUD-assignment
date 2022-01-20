@@ -1,0 +1,23 @@
+<ul>
+
+<li> <h3> Name: <%= @company.name  %> <h3> </li> 
+<li>  ID: <%= @company.id %> </li>
+<li>  Location: <%= @company.location %> </li>
+<li>  Contact:: <%= @company.phone_number %> </li>
+<li>  Employee Count: <%= @company.no_of_employee %> </li>
+<li>  Type: <%= @company.company_type %> </li>
+<li> Created on <%= @company.created_on %></li>
+<li> Updated on on <%= @company.updated_on %></li>
+</ul>
+
+
+<ul> 
+
+<li> <%= link_to "Update Company" , edit_company_path %> </li>
+<li> <%= link_to "Delete Company" , company_path(@company) , data:{
+    turbo_method: :delete ,
+    turbo_confirm: " Delete Company ? "
+}
+%> </li> 
+
+</ul>

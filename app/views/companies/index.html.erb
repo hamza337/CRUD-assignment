@@ -1,0 +1,9 @@
+<h1 class="text-center"> Company Employee Relation </h1>
+
+<% @companies.each do |company| %>
+    <ul>
+ <li>   <%= link_to company.name , company %> </li> 
+</ul>
+ <% end %>
+<%= link_to "Add Company" , new_company_path %>
+

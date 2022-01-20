@@ -1,0 +1,12 @@
+<h1> Home Page <h1>
+<h1> List of Employees <h1>
+
+
+ <% @employees.each do |employee| %>
+     <ul>
+
+    <li>   <%= link_to employee.name , employee %> </li>
+    </ul>
+ <% end %>
+
+<%= link_to "Add Employee" , new_employee_path %>

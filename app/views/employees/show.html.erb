@@ -1,0 +1,21 @@
+<ul>
+
+<li> <h3> Name: <%= @employee.name  %> <h3> </li> 
+<li>  ID: <%= @employee.id %> </li>
+<li>  Designation: <%= @employee.designation %> </li>
+<li>  Grade: <%= @employee.grade %> </li>
+<li>  Company id: <%= @employee.company_id %> </li>
+
+</ul>
+
+
+<ul> 
+
+<li> <%= link_to "Update Employee" , edit_employee_path %> </li>
+<li> <%= link_to "Delete Employee" , employee_path(@employee) , data:{
+    turbo_method: :delete ,
+    turbo_confirm: "Confirm Delete ? "
+}
+%> </li> 
+
+</ul>
