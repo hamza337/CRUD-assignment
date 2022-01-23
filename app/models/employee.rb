@@ -1,3 +1,3 @@
 class Employee < ApplicationRecord
-    has_one :address as: :addressable
+    has_one :address, as: :addressable
 end

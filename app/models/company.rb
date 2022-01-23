@@ -1,7 +1,7 @@
 class Company < ApplicationRecord
 
   
-    has_one :address as: :addressable
+    has_one :address, as: :addressable
     
     validates :name, presence: true , uniqueness: true
     validates :phone_number, length: { minimum: 7 }
